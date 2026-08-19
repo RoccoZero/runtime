@@ -1,0 +1,15 @@
+﻿<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove(Directory.Build.targets, $(MSBuildThisFileDirectory)..))" />
+
+  <PropertyGroup Condition="'$(RoccoZeroPackageVersion)' != ''">
+    <PackageId>RoccoZero.Microsoft.Extensions.Logging.Console</PackageId>
+    <PackageVersion>$(RoccoZeroPackageVersion)</PackageVersion>
+    <EnablePackageValidation>false</EnablePackageValidation>
+    <IncludeSymbols>false</IncludeSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Divine.Common" Key="002400000480000094000000060200000024000052534131000400000100010005a421dd2d57494d11b0fa8695718affbb8830c38d3e9e4ca90ec2543d00cb51bff18660dc92d1672ae5a2d41352d71d4fac38f670bcebba2a5d5c9d160aaa51481e70b82612852117784dcf10786cd5888eab2be9760790edbfb240f3d05a32f0467d3f50092cd5cb4e3f2af8c18f76c58d495517026a5dc63f99bbf8720ed3" />
+  </ItemGroup>
+
+</Project>
